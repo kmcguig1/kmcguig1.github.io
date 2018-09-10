@@ -1,0 +1,123 @@
+body {
+    background-color: e5e5e5;
+}
+
+.container {
+    margin-left:auto;
+    margin-right:auto;
+    width:768px;
+    height: 1024px;
+    color:#000;
+    padding:100px;
+}
+
+.letter-container {
+    font-family: "tenez",sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    height: 600px;
+}
+
+.letter-container h1 {
+    font-size: 788px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom:0px;
+/*    height: 300px;*/
+        
+}
+
+.info-section {
+    font-family: "motiva-sans",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.info-section h2 {
+    font-family: "tenez",sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #0b552e;
+}
+
+.info-section h1 {
+    font-family: "tenez",sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 104px;
+    color: #fff;
+    background-color: #cba43d;
+    width: 375px;
+    height: 100px;
+    text-align: center;
+    float: left;
+    line-height: 100px;
+    
+}
+
+.info-section p {
+    font-size: 10.5pt;
+    width: 235px;
+    height: 292px;
+    float: right;
+}
+
+.sample-set {
+    font-family: "tenez",sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    color: #fff;
+    font-size: 23pt;
+    width: 375px;
+    height: 131px;
+    background-color: #0b552e;
+    overflow: hidden;    
+   
+}
+
+.photo-title {
+    font-family: "tenez",sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 17pt;
+}
+
+ .photo-title h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16.5pt;
+    width: 235px;
+    height: 33px;
+    background-color: #cba43d;
+    text-align: center;
+    float: right;
+    
+    }
+
+.photo-title h4 {
+    float: right;
+}
+
+.photo-title img {
+    width: 100px;
+    display: inline-block;
+
+}
+
+.sources h3 {
+    font-family: "tenez",sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20pt;
+    text-transform: uppercase;
+}
+
+.sources p {
+    font-family: "motiva-sans",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px
+}
