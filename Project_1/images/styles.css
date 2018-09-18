@@ -1,5 +1,5 @@
  body {
-     background-color: e5e5e5;
+     background-color: #e5e5e5;
  }
  
  .container {
@@ -17,8 +17,19 @@
     margin-top: -600px;
     margin-bottom: -480px;
     padding: 60px;
+/*    height: 900px;*/
 }
+
+.analysis {
+    position: absolute;
+/*    z-index: 20;*/
+    top: -622px;
+    left: 34px;
+    margin-bottom: -600px;
+}
+
 /*Button*/
+
 #button {
     width: 260px;
     height: 40px;
@@ -27,25 +38,31 @@
     margin-bottom: -300px;
     margin-top: 15px;
     margin-right: 5px;
-    z-index: 30;
     font-family: "tenez",sans-serif;
     font-style: italic;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
-    font-size: 20;
+    font-size: 18px;
     line-height: 0px;
     padding-bottom: 2px;
     overflow: hidden;
-    
+    z-index: 30;
+    position: relative;
 }
+
+#button:hover {
+    background-color: #cba43d;
+}
+
 /*Title and Paragraph*/
  .info-section {
     font-family: "motiva-sans",sans-serif;
     font-style: normal;
     font-weight: 400;
     float: left;
+
  }
  .info-section h2 {
     font-family: "tenez",sans-serif;
@@ -92,6 +109,9 @@
 }
  
 .info-section p {
+    font-family: "motiva-sans",sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16.5px;
     width: 260px;
     height: auto;
@@ -100,7 +120,7 @@
     margin-left: 40px;
     margin-top: 64px;
     margin-bottom: -100%
-    
+
 }
 
 /*Sample Set*/
@@ -149,7 +169,7 @@
     font-weight: 300;
     font-size: 18px;
     width: 180px;
-    margin-bottom: -50;
+    margin-bottom: -50px;
     margin-top: 3px;
 }
  .photo-title img {
