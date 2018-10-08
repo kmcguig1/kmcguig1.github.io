@@ -1,0 +1,449 @@
+* {
+    background-color: #bfe6f1;
+    margin: 0px;
+}
+
+.container {
+    height: 768px;
+    width: 2048;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/*Checklist*/
+
+.checklist {
+    height: 200px;
+    width: 2048px;
+    background-color: white;
+    position: fixed;
+    top: 0px !important;
+    display: grid;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+
+.checklist h3 {
+    background-color: white;
+    padding-top: 20px;
+}
+
+.Item1 {
+    background-color: #fff;
+    height: 30px;
+    width: 500px;
+    margin-top: 10px;
+    grid-column-start: 1;
+}
+
+.Checkbox1 {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #000;
+    background-color: #fff;
+    position: absolute;
+}
+
+.Check1 {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #000;
+    background-color: red;
+    position: relative;
+    opacity: 0;
+}
+
+.Item2 {
+    background-color: #fff;
+    height: 30px;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: -400px;    
+}
+
+.Checkbox2 {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #000;
+    background-color: #fff;
+    position: absolute;
+}
+
+.Check2 {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #000;
+    background-color: red;
+    position: relative;
+    opacity: 0;
+}
+
+.Item3 {
+    background-color: #fff;
+    height: 30px;
+    width: 500px;
+    margin-top: 10px;
+}
+
+.Checkbox3 {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #000;
+    background-color: #fff;
+    position: absolute;
+}
+
+.Check3 {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #000;
+    background-color: red;
+    position: relative;
+    opacity: 0;
+}
+
+.Item4 {
+    background-color: #fff;
+    height: 30px;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: -400px;
+    grid-column-start: 2;
+}
+
+.Checkbox4 {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #000;
+    background-color: #fff;
+    position: absolute;
+}
+
+.Check4 {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #000;
+    background-color: red;
+    position: relative;
+    opacity: 0;
+}
+
+.Item5 {
+    background-color: #fff;
+    height: 30px;
+    width: 500px;
+    margin-top: 10px;
+}
+.Checkbox5 {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #000;
+    background-color: #fff;
+    position: absolute;
+}
+
+.Check5 {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #000;
+    background-color: red;
+    position: relative;
+    opacity: 0;
+}
+
+.Item6 {
+    background-color: #fff;
+    height: 30px;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: -400px;
+}
+
+.Checkbox6 {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #000;
+    background-color: #fff;
+    position: absolute;
+}
+
+.Check6 {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #000;
+    background-color: red;
+    position: relative;
+    opacity: 0;
+}
+
+/*Person*/
+
+.person {
+    height: 300px;
+    width: 200px;
+    background-color: cadetblue;
+    margin-top: 168px;
+    position: fixed;
+    left: 150px;
+
+}
+
+.person2 {
+    height: 300px;
+    width: 200px;
+    background-color: azure;
+    position: relative;
+    opacity: 0;
+}
+
+.person3 {
+    height: 300px;
+    width: 200px;
+    background-color:darkseagreen;
+    position: absolute;
+    opacity: 0;
+    margin-top: -300px;
+}
+
+.person4 {
+    height: 300px;
+    width: 200px;
+    background-color:cornflowerblue;
+    position: absolute;
+    opacity: 0;
+    margin-top: -300px;
+}
+
+/*Items to click*/
+
+.items {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 468px;
+    margin-top: 300px;
+}
+
+.suitcase_button {
+    width: 130px;
+    height: 200px;
+    padding: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.suitcase {
+    width: 130px;
+    height: 200px;
+    background-color: black;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 600px;
+}
+
+.passport {
+    width: 45px;
+    height: 70px;
+    background-color: darkblue;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+}
+
+.passport_button {
+    width: 45px;
+    height: 70px;
+    padding: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+.car {
+    position: relative;
+    height: 345px;
+    width: 600px;
+    background-color:black;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+}
+
+.car_button {
+    height: 345px;
+    width: 600px;
+    padding: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.boarding_pass {
+    width: 90px;
+    height: 35px;
+    background-color: white;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 1100px;
+    margin-bottom: 200px;
+}
+
+.bp_button {
+    width: 90px;
+    height: 35px;
+    padding: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.security {
+    width: 235px;
+    height: 350px;
+    background-color: lightgray;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 500px;
+    cursor: pointer;
+}
+
+.security_button {
+    width: 235px;
+    height: 350px;
+    padding: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.board {
+    width: 235px;
+    height: 350px;
+    background-color: lightgray;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 400px;
+    margin-right: 200px;
+    cursor: pointer;
+}
+
+.board_button {
+    width: 235px;
+    height: 350px;
+    padding: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/*Final Popup*/
+
+/*
+.Final_modal {
+    margin: 0 auto;
+    padding-top: 60px;
+    position: relative;
+    background-color: #ffff;
+    width: 400px;
+}
+
+.Final_modal button {
+    width: 235px;
+    height: 350px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.Final_modal .modal-backdrop {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.2s ease-in;
+}
+
+.Final_modal #modal-toggle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+}
+
+.Final_modal #modal-toggle:hover ~ button {    
+
+}
+
+.Final_modal #modal-toggle:checked {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    opacity: 0;
+}
+
+.Final_modal #modal-toggle:checked ~ .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.Final_modal #modal-toggle:checked ~ .modal-backdrop .modal-content {
+    background-color: #fff;
+    max-width: 500px;
+    width: 100%;
+    height: 500px;
+    padding: 10px 30px;
+    position: absolute;
+    left: 470px;
+    top: 12%;
+    border-radius: 4px;
+    z-index: 999;
+    pointer-events: auto;
+    cursor: auto;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 400px) {
+
+.Final_modal #modal-toggle:checked ~ .modal-backdrop .modal-content { 
+    left: 0; }
+}
+
+.Final_modal #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close:hover { 
+    color: #333; 
+    cursor: pointer;
+}
+
+.Final_modal label {
+    background-color: #fff;
+}
+
+.Final_modal h2 {
+    background-color: #fff;
+}
+
+.Final_modal p {
+    background-color: #fff;
+}
+
+.Final_modal a {
+    background-color: #bcdda8;
+    text-decoration: none;
+    float: right;
+    margin-top: 375px;
+}
+*/
