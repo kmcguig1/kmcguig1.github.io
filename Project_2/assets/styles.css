@@ -4,8 +4,8 @@
 }
 
 .container {
-    width: 1024px;
-    height: 768px;
+    width: 768px;
+    height: 1024px;
     margin-left: auto;
     margin-right: auto;
     background-color: #bfe6f1;
@@ -13,14 +13,14 @@
 
 .title_info h1 {
     background-color: white;
-    width: 840px;
+    width: 768px;
     height: 100px;
     text-align: center;
     margin: auto;
 }
 
 .title_info p {
-    width: 840px;
+    width: 768px;
     height: 75px;
     background-color: #bcbec0;
     margin-top: 30px;
@@ -31,709 +31,367 @@
 
 
 .locations {
-    width: 840px;
-    margin-top: 20px;
+    width: 768px;
+    margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 100px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-column-gap: 40px;
+    grid-column-gap: 10px;
     grid-row-gap: 40px;
+    justify-items: center;
 }
 
 .Paris {
     grid-column-start: 1;
+    width: 350px;
+    height: 200px;
+    background-color: #fff;
 }
 
 .Paris h3 {
     text-align: center;
-    width: 400px;
+    width: 350px;
     height: 30px;
-
 }
 
 .Paris_modal {
-    margin: 0 auto;
-    padding-top: 60px;
-    position: relative;
-    background-color: #ffff;
-    width: 400px;
-}
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+        z-index: 1;
+    }
 
-.Paris_modal button {
-    display: block;
-    text-align: center;
-    background-color: #bcdda8;
-    cursor: pointer;
-    transition: background 0.3s ease-in;
-    margin-top: 130px;
-    width: 400px;
-    padding: 10px;
-}
+.Paris_modal-content {
+        width: 500px;
+        height: 500px;    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 10px;
+    }
 
-.Paris_modal .modal-backdrop {
-    height: 0;
-    width: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: opacity 0.2s ease-in;
-}
+.Paris_close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
 
-.Paris_modal #modal-toggle {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    opacity: 0;
-}
+.Paris_close-button:hover {
+        background-color: darkgray;
+    }
 
-.Paris_modal #modal-toggle:hover ~ button {    
-
-}
-
-.Paris_modal #modal-toggle:checked {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    opacity: 0;
-}
-
-.Paris_modal #modal-toggle:checked ~ .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    pointer-events: none;
-    opacity: 1;
-}
-
-.Paris_modal #modal-toggle:checked ~ .modal-backdrop .modal-content {
-    background-color: #fff;
-    max-width: 500px;
-    width: 100%;
-    height: 500px;
-    padding: 10px 30px;
-    position: absolute;
-    left: 470px;
-    top: 12%;
-    border-radius: 4px;
-    z-index: 999;
-    pointer-events: auto;
-    cursor: auto;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
-}
-@media (max-width: 400px) {
-
-.Paris_modal #modal-toggle:checked ~ .modal-backdrop .modal-content { 
-    left: 0; }
-}
-
-.Paris_modal #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close:hover { 
-    color: #333; 
-    cursor: pointer;
-}
-
-.Paris_modal label {
-    background-color: #fff;
-}
-
-.Paris_modal h2 {
-    background-color: #fff;
-}
-
-.Paris_modal p {
-    background-color: #fff;
-}
-
-.Paris_modal a {
-    background-color: #bcdda8;
-    text-decoration: none;
-    float: right;
-    margin-top: 375px;
-}
+.show-Paris_modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
 
 .London {
     grid-column-start: 2;
+    width: 350px;
+    height: 200px;
+    background-color: #fff;
 }
 
 .London h3 {
     text-align: center;
-    width: 400px;
+    width: 350px;
     height: 30px;
 }
 
 .London_modal {
-    margin: 0 auto;
-    padding-top: 60px;
-    position: relative;
-    background-color: #ffff;
-    width: 400px;
-}
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+        z-index: 1;
+    }
 
-.London_modal button {
-    display: block;
-    text-align: center;
-    background-color: #bcdda8;
-    cursor: pointer;
-    transition: background 0.3s ease-in;
-    margin-top: 130px;
-    width: 400px;
-    padding: 10px;
-}
+.London_modal-content {
+        width: 500px;
+        height: 500px;    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 10px;
+    }
 
-.London_modal .modal-backdrop {
-    height: 0;
-    width: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: opacity 0.2s ease-in;
-}
+.London_close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
 
-.London_modal #modal-toggle {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    opacity: 0;
-}
+.London_close-button:hover {
+        background-color: darkgray;
+    }
 
-.London_modal #modal-toggle:hover ~ button {    
+.show-London_modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
 
-}
-
-.London_modal #modal-toggle:checked {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    opacity: 0;
-}
-
-.London_modal #modal-toggle:checked ~ .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    pointer-events: none;
-    opacity: 1;
-}
-
-.London_modal #modal-toggle:checked ~ .modal-backdrop .modal-content {
-    background-color: #fff;
-    max-width: 500px;
-    width: 100%;
-    height: 500px;
-    padding: 10px 30px;
-    position: absolute;
-    left: 470px;
-    top: 12%;
-    border-radius: 4px;
-    z-index: 999;
-    pointer-events: auto;
-    cursor: auto;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
-}
-@media (max-width: 400px) {
-
-.London_modal #modal-toggle:checked ~ .modal-backdrop .modal-content { 
-    left: 0; }
-}
-
-.London_modal #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close:hover { 
-    color: #333; 
-    cursor: pointer;
-}
-
-.London_modal label {
+.Rome {
+    width: 350px;
+    height: 200px;
     background-color: #fff;
 }
-
-.London_modal h2 {
-    background-color: #fff;
-}
-
-.London_modal p {
-    background-color: #fff;
-}
-
-.London_modal a {
-    background-color: #bcdda8;
-    text-decoration: none;
-    float: right;
-    margin-top: 375px;
-}
-
 
 .Rome h3 {
     text-align: center;
-    width: 400px;
+    width: 350px;
     height: 30px;
 }
 
 .Rome_modal {
-    margin: 0 auto;
-    padding-top: 60px;
-    position: relative;
-    background-color: #ffff;
-    width: 400px;
-}
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+        z-index: 1;
+    }
 
-.Rome_modal button {
-    display: block;
-    text-align: center;
-    background-color: #bcdda8;
-    cursor: pointer;
-    transition: background 0.3s ease-in;
-    margin-top: 130px;
-    width: 400px;
-    padding: 10px;
-}
+.Rome_modal-content {
+        width: 500px;
+        height: 500px;    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 10px;
+    }
 
-.Rome_modal .modal-backdrop {
-    height: 0;
-    width: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: opacity 0.2s ease-in;
-}
+.Rome_close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
 
-.Rome_modal #modal-toggle {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    opacity: 0;
-}
+.Rome_close-button:hover {
+        background-color: darkgray;
+    }
 
-.Rome_modal #modal-toggle:hover ~ button {    
+.show-Rome_modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
 
-}
-
-.Rome_modal #modal-toggle:checked {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    opacity: 0;
-}
-
-.Rome_modal #modal-toggle:checked ~ .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    pointer-events: none;
-    opacity: 1;
-}
-
-.Rome_modal #modal-toggle:checked ~ .modal-backdrop .modal-content {
+.Tokyo {
+    width: 350px;
+    height: 200px;
     background-color: #fff;
-    max-width: 500px;
-    width: 100%;
-    height: 500px;
-    padding: 10px 30px;
-    position: absolute;
-    left: 470px;
-    top: 12%;
-    border-radius: 4px;
-    z-index: 999;
-    pointer-events: auto;
-    cursor: auto;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
-}
-@media (max-width: 400px) {
-
-.Rome_modal #modal-toggle:checked ~ .modal-backdrop .modal-content { 
-    left: 0; }
-}
-
-.Rome_modal #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close:hover { 
-    color: #333; 
-    cursor: pointer;
-}
-
-.Rome_modal label {
-    background-color: #fff;
-}
-
-.Rome_modal h2 {
-    background-color: #fff;
-}
-
-.Rome_modal p {
-    background-color: #fff;
-}
-
-.Rome_modal a {
-    background-color: #bcdda8;
-    text-decoration: none;
-    float: right;
-    margin-top: 375px;
 }
 
 .Tokyo h3 {
     text-align: center;
-    width: 400px;
+    width: 350px;
     height: 30px;
 }
 
 .Tokyo_modal {
-    margin: 0 auto;
-    padding-top: 60px;
-    position: relative;
-    background-color: #ffff;
-    width: 400px;
-}
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+        z-index: 1;
+    }
 
-.Tokyo_modal button {
-    display: block;
-    text-align: center;
-    background-color: #bcdda8;
-    cursor: pointer;
-    transition: background 0.3s ease-in;
-    margin-top: 130px;
-    width: 400px;
-    padding: 10px;
-}
+.Tokyo_modal-content {
+        width: 500px;
+        height: 500px;    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 10px;
+    }
 
-.Tokyo_modal .modal-backdrop {
-    height: 0;
-    width: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: opacity 0.2s ease-in;
-}
+.Tokyo_close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
 
-.Tokyo_modal #modal-toggle {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    opacity: 0;
-}
+.Tokyo_close-button:hover {
+        background-color: darkgray;
+    }
 
-.Tokyo_modal #modal-toggle:hover ~ button {    
+.show-Tokyo_modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
 
-}
-
-.Tokyo_modal #modal-toggle:checked {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    opacity: 0;
-}
-
-.Tokyo_modal #modal-toggle:checked ~ .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    pointer-events: none;
-    opacity: 1;
-}
-
-.Tokyo_modal #modal-toggle:checked ~ .modal-backdrop .modal-content {
+.NYC {
+    width: 350px;
+    height: 200px;
     background-color: #fff;
-    max-width: 500px;
-    width: 100%;
-    height: 500px;
-    padding: 10px 30px;
-    position: absolute;
-    left: 470px;
-    top: 12%;
-    border-radius: 4px;
-    z-index: 999;
-    pointer-events: auto;
-    cursor: auto;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
-}
-@media (max-width: 400px) {
-
-.Tokyo_modal #modal-toggle:checked ~ .modal-backdrop .modal-content { 
-    left: 0; }
-}
-
-.Tokyo_modal #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close:hover { 
-    color: #333; 
-    cursor: pointer;
-}
-
-.Tokyo_modal label {
-    background-color: #fff;
-}
-
-.Tokyo_modal h2 {
-    background-color: #fff;
-}
-
-.Tokyo_modal p {
-    background-color: #fff;
-}
-
-.Tokyo_modal a {
-    background-color: #bcdda8;
-    text-decoration: none;
-    float: right;
-    margin-top: 375px;
 }
 
 .NYC h3 {
     text-align: center;
-    width: 400px;
+    width: 350px;
     height: 30px;
 }
 
 .NYC_modal {
-    margin: 0 auto;
-    padding-top: 60px;
-    position: relative;
-    background-color: #ffff;
-    width: 400px;
-}
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+        z-index: 1;
+    }
 
-.NYC_modal button {
-    display: block;
-    text-align: center;
-    background-color: #bcdda8;
-    cursor: pointer;
-    transition: background 0.3s ease-in;
-    margin-top: 130px;
-    width: 400px;
-    padding: 10px;
-}
+.NYC_modal-content {
+        width: 500px;
+        height: 500px;    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 10px;
+    }
 
-.NYC_modal .modal-backdrop {
-    height: 0;
-    width: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: opacity 0.2s ease-in;
-}
+.NYC_close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
 
-.NYC_modal #modal-toggle {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    opacity: 0;
-}
+.NYC_close-button:hover {
+        background-color: darkgray;
+    }
 
-.NYC_modal #modal-toggle:hover ~ button {    
+.show-NYC_modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
 
-}
-
-.NYC_modal #modal-toggle:checked {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    opacity: 0;
-}
-
-.NYC_modal #modal-toggle:checked ~ .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    pointer-events: none;
-    opacity: 1;
-}
-
-.NYC_modal #modal-toggle:checked ~ .modal-backdrop .modal-content {
-    background-color: #fff;
-    max-width: 500px;
-    width: 100%;
-    height: 500px;
-    padding: 10px 30px;
-    position: absolute;
-    left: 470px;
-    top: 12%;
-    border-radius: 4px;
-    z-index: 999;
-    pointer-events: auto;
-    cursor: auto;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
-}
-@media (max-width: 400px) {
-
-.NYC_modal #modal-toggle:checked ~ .modal-backdrop .modal-content { 
-    left: 0; }
-}
-
-.NYC_modal #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close:hover { 
-    color: #333; 
-    cursor: pointer;
-}
-
-.NYC_modal label {
+.Sydney {
+    width: 350px;
+    height: 200px;
     background-color: #fff;
 }
-
-.NYC_modal h2 {
-    background-color: #fff;
-}
-
-.NYC_modal p {
-    background-color: #fff;
-}
-
-.NYC_modal a {
-    background-color: #bcdda8;
-    text-decoration: none;
-    float: right;
-    margin-top: 375px;
-}
-
 
 .Sydney h3 {
     text-align: center;
-    width: 400px;
+    width: 350px;
     height: 30px;
 }
 
 .Sydney_modal {
-    margin: 0 auto;
-    padding-top: 60px;
-    position: relative;
-    background-color: #ffff;
-    width: 400px;
-}
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+        z-index: 1;
+    }
 
-.Sydney_modal button {
-    display: block;
-    text-align: center;
-    background-color: #bcdda8;
-    cursor: pointer;
-    transition: background 0.3s ease-in;
-    margin-top: 130px;
-    width: 400px;
-    padding: 10px;
-}
+.Sydney_modal-content {
+        width: 500px;
+        height: 500px;    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 10px;
+    }
 
-.Sydney_modal .modal-backdrop {
-    height: 0;
-    width: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: opacity 0.2s ease-in;
-}
+.Sydney_close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
 
-.Sydney_modal #modal-toggle {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    opacity: 0;
-}
+.Sydney_close-button:hover {
+        background-color: darkgray;
+    }
 
-.Sydney_modal #modal-toggle:hover ~ button {    
+.show-Sydney_modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
 
-}
 
-.Sydney_modal #modal-toggle:checked {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    opacity: 0;
-}
-
-.Sydney_modal #modal-toggle:checked ~ .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    pointer-events: none;
-    opacity: 1;
-}
-
-.Sydney_modal #modal-toggle:checked ~ .modal-backdrop .modal-content {
-    background-color: #fff;
-    max-width: 500px;
-    width: 100%;
-    height: 500px;
-    padding: 10px 30px;
-    position: absolute;
-    left: 470px;
-    top: 12%;
-    border-radius: 4px;
-    z-index: 999;
-    pointer-events: auto;
-    cursor: auto;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
-}
-@media (max-width: 400px) {
-
-.Sydney_modal #modal-toggle:checked ~ .modal-backdrop .modal-content { 
-    left: 0; }
-}
-
-.Sydney_modal #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close:hover { 
-    color: #333; 
-    cursor: pointer;
-}
-
-.Sydney_modal label {
-    background-color: #fff;
-}
-
-.Sydney_modal h2 {
-    background-color: #fff;
-}
-
-.Sydney_modal p {
-    background-color: #fff;
-}
-
-.Sydney_modal a {
-    background-color: #bcdda8;
-    text-decoration: none;
-    float: right;
-    margin-top: 375px;
-}

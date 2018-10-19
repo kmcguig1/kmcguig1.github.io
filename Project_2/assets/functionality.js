@@ -1,4 +1,4 @@
-//Suitcase
+//**Suitcase**
 
 $(document).ready(function () {
     $('.suitcase_button').on('click', function () {
@@ -32,7 +32,7 @@ $(document).ready(function () {
     });
 });
 
-//Passport
+//**Passport**
 
 $(document).ready(function () {
     $('.passport_button').on('click', function () {
@@ -58,32 +58,32 @@ $(document).ready(function () {
     });
 });
 
-//Car
+//**Car**
 
 $(document).ready(function () {
-    $('.car_button').on('click', function () {
+    $('#car_button').on('click', function () {
         $('.car').animate({
-            left: '750px',
-        })
+            left: '750px', 
+        },800)
     });
 });
 
 $(document).ready(function () {
-    $('.car_button').on('click', function () {
+    $('#car_button').on('click', function () {
         $('.Check5').animate({
             opacity: '1',
         })
     });
 });
 
-$(document).ready(function () {
-    $('.car_button').on('click', function scrollWin() {
-        window.scrollTo(2300,0);({
-        })
-    });
-});
+//$(document).ready(function () {
+//    $('.car_button').on('click', function scrollWin() {
+//        window.scrollTo(2300,0);({
+//        })
+//    });
+//});
 
-//Boarding Pass
+//**Boarding Pass**
 
 $(document).ready(function () {
     $('.bp_button').on('click', function () {
@@ -109,7 +109,7 @@ $(document).ready(function () {
     });
 });
 
-//Security
+//**Security**
 
 $(document).ready(function () {
     $('.security_button').on('click', function () {
@@ -127,7 +127,7 @@ $(document).ready(function () {
     });
 });
 
-//Boarding
+//**Boarding**
 
 $(document).ready(function () {
     $('.board_button').on('click', function () {
