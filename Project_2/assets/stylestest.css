@@ -1,0 +1,168 @@
+.person {
+    height: 300px;
+    width: 200px;
+    top: 466px;
+    position: fixed;
+    left: 150px;
+}
+
+.person1 {
+    height: 300px;
+    width: 200px;
+    background-color: cadetblue;
+    top: 466px;
+    position: fixed;
+    left: 150px;
+
+}
+
+.person2 {
+    height: 300px;
+    width: 200px;
+    background-color: azure;
+    position: relative;
+    opacity: 0;
+}
+
+.person3 {
+    height: 300px;
+    width: 200px;
+    background-color:darkseagreen;
+    position: absolute;
+    opacity: 0;
+    margin-top: -300px;
+}
+
+.person4 {
+    height: 300px;
+    width: 200px;
+    background-color:cornflowerblue;
+    position: absolute;
+    opacity: 0;
+    margin-top: -300px;
+}
+
+.items {
+    height: 768px;
+    position: relative;
+}
+
+.suitcase_button {
+    width: 130px;
+    height: 200px;
+    padding: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.suitcase {
+    width: 130px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    left: 600px;
+    margin-top: 568px;
+}
+
+.passport {
+    width: 45px;
+    height: 70px;
+    background-color: darkblue;
+    position: absolute;
+    left: 1000px;
+    margin-bottom: 200px;
+    margin-top: 523px;
+}
+
+.passport_button {
+    width: 45px;
+    height: 70px;
+    padding: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+.car {
+    position: relative;
+    height: 345px;
+    width: 600px;
+    background-color:black;
+    position: absolute;
+    left: 1300px;
+    margin-top: 423px;
+
+}
+
+#car_button {
+    height: 345px;
+    width: 600px;
+    padding: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#screen {
+    height: 100vh;
+    width: 100vw;
+/*    background-color: azure;*/
+    position: relative;
+    left: 3000px;
+}
+
+#boarding_pass {
+    width: 90px;
+    height: 35px;
+    background-color: black;
+    left: 500px;
+    margin-top: 533px;
+    position: absolute;
+}
+
+.bp_button {
+    width: 90px;
+    height: 35px;
+    padding: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.security {
+    width: 235px;
+    height: 350px;
+    background-color: lightgray;
+    position: absolute;
+    left: 900px;
+    margin-top: 428px;
+}
+
+.security_button {
+    width: 235px;
+    height: 350px;
+    padding: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.board {
+    width: 235px;
+    height: 350px;
+    background-color: lightgray;
+    position: absolute;
+    left: 4500px;
+    margin-top: -460px;
+}
+
+.board_button {
+    width: 235px;
+    height: 350px;
+    padding: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}

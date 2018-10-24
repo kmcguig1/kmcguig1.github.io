@@ -1,15 +1,18 @@
 * {
-
+/*    background-color: #bfe6f1;*/
     margin: 0px;
 }
 
-/*Checklist*/
-
 .container {
-    background-color: aliceblue;
     height: 100vh;
-    width: 5000px;
+    width: 2048;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow-y: hidden;
+    background-color: #bfe6f1;
 }
+
+/*Checklist*/
 
 .checklist {
     height: 200px;
@@ -20,11 +23,16 @@
     display: grid;
     padding-left: 30px;
     padding-bottom: 5px;
+    box-shadow: 1px 1px 30px #000;
 }
 
 .checklist h3 {
     background-color: white;
-    padding-top: 20px;
+    padding-top: 15px;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
 }
 
 .Item1 {
@@ -36,20 +44,22 @@
 }
 
 .Checkbox1 {
-    height: 25px;
-    width: 25px;
-    border: 1px solid #000;
-    background-color: #fff;
+    height: 27px;
+    width: 27px;
+    background-image: url(blank_check.png);
     position: absolute;
 }
 
 .Check1 {
-    height: 25px;
-    width: 25px;
-    border: 1px solid #000;
-    background-color: red;
+    height: 27px;
+    width: 27px;
+    background-image: url(check.png);
     position: relative;
     opacity: 0;
+}
+
+.Item1 p {
+    
 }
 
 .Item2 {
@@ -61,18 +71,16 @@
 }
 
 .Checkbox2 {
-    height: 25px;
-    width: 25px;
-    border: 1px solid #000;
-    background-color: #fff;
+    height: 27px;
+    width: 27px;
+    background-image: url(blank_check.png);
     position: absolute;
 }
 
 .Check2 {
-    height: 25px;
-    width: 25px;
-    border: 1px solid #000;
-    background-color: red;
+    height: 27px;
+    width: 27px;
+    background-image: url(check.png);
     position: relative;
     opacity: 0;
 }
@@ -85,18 +93,16 @@
 }
 
 .Checkbox3 {
-    height: 25px;
-    width: 25px;
-    border: 1px solid #000;
-    background-color: #fff;
+    height: 27px;
+    width: 27px;
+    background-image: url(blank_check.png);
     position: absolute;
 }
 
 .Check3 {
-    height: 25px;
-    width: 25px;
-    border: 1px solid #000;
-    background-color: red;
+    height: 27px;
+    width: 27px;
+    background-image: url(check.png);
     position: relative;
     opacity: 0;
 }
@@ -111,18 +117,16 @@
 }
 
 .Checkbox4 {
-    height: 25px;
-    width: 25px;
-    border: 1px solid #000;
-    background-color: #fff;
+    height: 27px;
+    width: 27px;
+    background-image: url(blank_check.png);
     position: absolute;
 }
 
 .Check4 {
-    height: 25px;
-    width: 25px;
-    border: 1px solid #000;
-    background-color: red;
+    height: 27px;
+    width: 27px;
+    background-image: url(check.png);
     position: relative;
     opacity: 0;
 }
@@ -134,18 +138,16 @@
     margin-top: 10px;
 }
 .Checkbox5 {
-    height: 25px;
-    width: 25px;
-    border: 1px solid #000;
-    background-color: #fff;
+    height: 27px;
+    width: 27px;
+    background-image: url(blank_check.png);
     position: absolute;
 }
 
 .Check5 {
-    height: 25px;
-    width: 25px;
-    border: 1px solid #000;
-    background-color: red;
+    height: 27px;
+    width: 27px;
+    background-image: url(check.png);
     position: relative;
     opacity: 0;
 }
@@ -159,18 +161,16 @@
 }
 
 .Checkbox6 {
-    height: 25px;
-    width: 25px;
-    border: 1px solid #000;
-    background-color: #fff;
+    height: 27px;
+    width: 27px;
+    background-image: url(blank_check.png);
     position: absolute;
 }
 
 .Check6 {
-    height: 25px;
-    width: 25px;
-    border: 1px solid #000;
-    background-color: red;
+    height: 27px;
+    width: 27px;
+    background-image: url(check.png);
     position: relative;
     opacity: 0;
 }
@@ -214,15 +214,6 @@
 .person {
     height: 300px;
     width: 200px;
-    top: 466px;
-    position: fixed;
-    left: 150px;
-    z-index: 5;
-}
-
-.person1 {
-    height: 300px;
-    width: 200px;
     background-color: cadetblue;
     top: 466px;
     position: fixed;
@@ -259,7 +250,11 @@
 /*Items to click*/
 
 .items {
-    height: 768px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 468px;
+    margin-top: 300px;
     position: relative;
 }
 
@@ -275,20 +270,22 @@
 .suitcase {
     width: 130px;
     height: 200px;
-    background-color: black;
-    position: absolute;
-    left: 600px;
-    margin-top: 568px;
+    background-image: url(suitcase.png);
+    background-repeat: no-repeat;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 600px;
 }
 
 .passport {
     width: 45px;
     height: 70px;
-    background-color: darkblue;
-    position: absolute;
-    left: 1000px;
+    background-image:url(passport.png);
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 200px;
+    margin-right: 200px;
     margin-bottom: 200px;
-    margin-top: 523px;
 }
 
 .passport_button {
@@ -305,10 +302,9 @@
     position: relative;
     height: 345px;
     width: 600px;
-    background-color:black;
-    position: absolute;
-    left: 1300px;
-    margin-top: 423px;
+    background-image: url(car.png);
+    flex-grow: 0;
+    flex-shrink: 0;
 
 }
 
@@ -321,21 +317,14 @@
     cursor: pointer;
 }
 
-#screen {
-    height: 100vh;
-    width: 100vw;
-/*    background-color: azure;*/
-    position: relative;
-    left: 3000px;
-}
-
 #boarding_pass {
     width: 90px;
     height: 35px;
-    background-color: black;
-    left: 500px;
-    margin-top: 533px;
-    position: absolute;
+    background-image: url(boarding_pass.png);
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 1100px;
+    margin-bottom: 200px;
 }
 
 .bp_button {
@@ -350,10 +339,11 @@
 .security {
     width: 235px;
     height: 350px;
-    background-color: lightgray;
-    position: absolute;
-    left: 900px;
-    margin-top: 428px;
+    background-image: url(security.png);
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 500px;
+    cursor: pointer;
 }
 
 .security_button {
@@ -368,11 +358,12 @@
 .board {
     width: 235px;
     height: 350px;
-    background-color: lightgray;
-    position: absolute;
-    left: 4600px;
-    margin-top: -460px;
-    
+    background-image: url(board.png);
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 400px;
+    margin-right: 200px;
+    cursor: pointer;
 }
 
 .board_button {
@@ -382,16 +373,6 @@
     border: none;
     background: none;
     cursor: pointer;
-}
-
-.end {
-    height: 350px;
-    width: 165px;
-    background-color: beige;
-    position: absolute;
-    left: 4835px;
-    margin-top: -460px;
-    z-index: 5;
 }
 
 /*Final Popup*/

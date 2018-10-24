@@ -16,13 +16,13 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    $('.suitcase_button').on('click', function () {
-        $('.person1').animate({
-            opacity: '0',
-        })
-    });
-});
+//$(document).ready(function () {
+//    $('.suitcase_button').on('click', function () {
+//        $('.person').animate({
+//            opacity: '0',
+//        })
+//    });
+//});
 
 $(document).ready(function () {
     $('.suitcase_button').on('click', function () {
@@ -58,20 +58,12 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    $('.passport_button').on('click', function () {
-        $('.person2').animate({
-            opacity: '0',
-        })
-    });
-});
-
 //**Car**
 
 $(document).ready(function () {
     $('#car_button').on('click', function () {
         $('.car').animate({
-            left: '2500px', 
+            left: '750px', 
         },800)
     });
 });
@@ -84,19 +76,12 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    $('#car_button').on('click', function () {
-        $('.person3').animate({
-            opacity: '0',
-        },1200, function(){
-            $('.person3' ).animate({
-                opacity: '1',
-            },200)
-});
-});
-    });
-
-
+//$(document).ready(function () {
+//    $('.car_button').on('click', function scrollWin() {
+//        window.scrollTo(2300,0);({
+//        })
+//    });
+//});
 
 //**Boarding Pass**
 
@@ -124,20 +109,12 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    $('.bp_button').on('click', function () {
-        $('.person3').animate({
-            opacity: '0',
-        })
-    });
-});
-
 //**Security**
 
 $(document).ready(function () {
     $('.security_button').on('click', function () {
         $('.person').animate({
-            left: '1200px',
+            left: '1000px',
         })
     });
 });

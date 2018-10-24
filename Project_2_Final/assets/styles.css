@@ -1,0 +1,467 @@
+*{
+    margin:0px;
+/*    background-color: #bfe6f1;*/
+    
+}
+
+.container {
+    width: 768px;
+    height: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("map.png");
+}
+
+.title_info h1 {
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    width: 768px;
+    height: 100px;
+    background-position: center;
+    margin: auto;
+}
+
+.title_info p {
+    width: 768px;
+    height: 75px;
+    background-color: rgba(146, 213, 245, .6);
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    
+}
+
+
+.locations {
+    width: 768px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    justify-items: center;
+}
+
+.Paris {
+    grid-column-start: 1;
+    width: 350px;
+    height: 200px;
+    background-image: url(paris.png);
+    box-shadow: 0 4px 8px 0 gray;
+}
+
+.P {
+    text-align: center;
+    width: 350px;
+    height: 30px;
+    margin-bottom: -20px;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.Paris_button {
+    background-color: #9fcd73;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 8px 0 #58595B;
+    border: none;
+    height: 30px;
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.Paris_modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 1;
+    }
+
+.Paris_modal-content {
+    width: 500px;
+    height: 500px;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    }
+
+.Paris_close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: #f38ba5;
+    }
+
+.Paris_close-button:hover {
+    background-color: darkgray;
+    }
+.Paris_modal-content button {
+background-color: #9fcd73;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 8px 0 #58595B;
+    border: none;
+    height: 30px;
+    width: 100px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.Paris_modal-content h1 {
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -15px;
+    margin-left: 10px;
+}
+
+.show-Paris_modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+
+
+.London {
+    grid-column-start: 2;
+    width: 350px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 gray;
+}
+
+.London h3 {
+    text-align: center;
+    width: 350px;
+    height: 30px;
+}
+
+.London_button {
+    background-color: #9fcd73;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 8px 0 #58595B;
+    border: none;
+    height: 30px;
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.London_modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 1;
+    }
+
+.London_modal-content {
+    width: 500px;
+    height: 500px;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    }
+
+.London_close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+    }
+
+.London_close-button:hover {
+    background-color: darkgray;
+    }
+
+.show-London_modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+
+.Rome {
+    width: 350px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 gray;
+}
+
+.Rome h3 {
+    text-align: center;
+    width: 350px;
+    height: 30px;
+}
+
+.Rome_modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 1;
+    }
+
+.Rome_modal-content {
+    width: 500px;
+    height: 500px;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    }
+
+.Rome_close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+    }
+
+.Rome_close-button:hover {
+    background-color: darkgray;
+    }
+
+.show-Rome_modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+
+.Tokyo {
+    width: 350px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 gray;
+}
+
+.Tokyo h3 {
+    text-align: center;
+    width: 350px;
+    height: 30px;
+}
+
+.Tokyo_modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 1;
+    }
+
+.Tokyo_modal-content {
+    width: 500px;
+    height: 500px;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    }
+
+.Tokyo_close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+    }
+
+.Tokyo_close-button:hover {
+    background-color: darkgray;
+    }
+
+.show-Tokyo_modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+
+.NYC {
+    width: 350px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 gray;
+}
+
+.NYC h3 {
+    text-align: center;
+    width: 350px;
+    height: 30px;
+}
+
+.NYC_modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 1;
+    }
+
+.NYC_modal-content {
+    width: 500px;
+    height: 500px;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    }
+
+.NYC_close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+    }
+
+.NYC_close-button:hover {
+    background-color: darkgray;
+    }
+
+.show-NYC_modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+
+.Sydney {
+    width: 350px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 gray;
+}
+
+.Sydney h3 {
+    text-align: center;
+    width: 350px;
+    height: 30px;
+}
+
+.Sydney_modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 1;
+    }
+
+.Sydney_modal-content {
+    width: 500px;
+    height: 500px;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    }
+
+.Sydney_close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+    }
+
+.Sydney_close-button:hover {
+    background-color: darkgray;
+    }
+
+.show-Sydney_modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+
+
