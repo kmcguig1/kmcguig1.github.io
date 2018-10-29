@@ -13,10 +13,9 @@
 }
 
 .title_info h1 {
-    background-image: url(logo.png);
-    background-repeat: no-repeat;
-    width: 768px;
-    height: 100px;
+    background-image: url(logo.svg);
+    width: 300px;
+    height: 135px;
     background-position: center;
     margin: auto;
 }
@@ -25,7 +24,7 @@
     width: 768px;
     height: 75px;
     background-color: rgba(146, 213, 245, .6);
-    margin-top: 30px;
+    margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -33,23 +32,26 @@
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
+    padding-top: 10px;
     
 }
 
 
 .locations {
     width: 768px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 100px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 40px;
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
     justify-items: center;
 }
+
+/***Paris***/
 
 .Paris {
     grid-column-start: 1;
@@ -59,7 +61,7 @@
     box-shadow: 0 4px 8px 0 gray;
 }
 
-.P {
+.Paris h3 {
     text-align: center;
     width: 350px;
     height: 30px;
@@ -68,6 +70,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
+    margin-top: -50px;
 }
 
 .Paris_button {
@@ -108,6 +111,7 @@
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 10px;
+    overflow: scroll;
     }
 
 .Paris_close-button {
@@ -118,24 +122,25 @@
     cursor: pointer;
     border-radius: 0.25rem;
     background-color: #f38ba5;
+    box-shadow: 0 4px 10px 0 #58595B;
     }
 
 .Paris_close-button:hover {
-    background-color: darkgray;
+    background-color: #DD6486;
     }
 .Paris_modal-content button {
-background-color: #9fcd73;
+    background-color: #9fcd73;
     font-family: geographica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    box-shadow: 0 4px 8px 0 #58595B;
+    box-shadow: 0 4px 10px 0 #58595B;
     border: none;
     height: 30px;
     width: 100px;
     float: right;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 50px;
     cursor: pointer;
+    margin-right: -195px;
 }
 
 .Paris_modal-content h1 {
@@ -144,6 +149,69 @@ background-color: #9fcd73;
     font-style: normal;
     margin-top: -15px;
     margin-left: 10px;
+    margin-bottom: -30px;
+}
+
+.earth1 {
+    width: 163px;
+    height: 163px;
+}
+
+.france {
+    width: 163px;
+    height: 163px;
+}
+
+.location1 h2{
+    float: right;
+    margin-top: -150px;
+    margin-right: 50px;
+}
+
+.location1 ul{
+    float: right;
+    width: 100px;
+    margin-top: -105px;
+    
+}
+
+.Paris_modal-content h2 {
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: -15px;
+    
+}
+
+.Paris_modal-content ul {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    
+}
+
+.arc {
+    width: 200px;
+    float: right;
+    margin-top: -315px;
+    margin-right: 10px;
+}
+
+.escargot {
+    width: 200px;
+    float: right;
+    margin-top: -210px;
+    margin-right: 10px;
+}
+
+.crepe {
+    width: 200px;
+    float: right;
+    margin-top: -82px;
+    margin-right: 10px;
 }
 
 .show-Paris_modal {
@@ -154,11 +222,13 @@ background-color: #9fcd73;
     }
 
 
+/***London***/
+
 .London {
     grid-column-start: 2;
     width: 350px;
     height: 200px;
-    background-color: #fff;
+    background-image: url(london2.png);
     box-shadow: 0 4px 8px 0 gray;
 }
 
@@ -166,6 +236,12 @@ background-color: #9fcd73;
     text-align: center;
     width: 350px;
     height: 30px;
+    margin-bottom: -20px;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: -50px;
 }
 
 .London_button {
@@ -180,6 +256,7 @@ background-color: #9fcd73;
     float: left;
     margin-left: 10px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .London_modal {
@@ -205,6 +282,7 @@ background-color: #9fcd73;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 10px;
+    overflow: scroll;
     }
 
 .London_close-button {
@@ -214,12 +292,101 @@ background-color: #9fcd73;
     text-align: center;
     cursor: pointer;
     border-radius: 0.25rem;
-    background-color: lightgray;
+    background-color: #f38ba5;
+    box-shadow: 0 4px 10px 0 #58595B;
     }
 
 .London_close-button:hover {
-    background-color: darkgray;
+    background-color: #DD6486;
     }
+
+.London_modal-content button {
+    background-color: #9fcd73;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 10px 0 #58595B;
+    border: none;
+    height: 30px;
+    width: 100px;
+    float: right;
+    margin-top: 50px;
+    cursor: pointer;
+    float: right;
+    margin-right: -195px;
+}
+
+.London_modal-content h1 {
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -15px;
+    margin-left: 10px;
+    margin-bottom: -30px;
+}
+
+.earth2 {
+    width: 163px;
+    height: 163px;
+}
+
+.uk {
+    width: 163px;
+    height: 163px;
+}
+
+.location2 h2{
+    float: right;
+    margin-top: -150px;
+    margin-right: 50px;
+}
+
+.location2 ul{
+    float: right;
+    width: 100px;
+    margin-top: -105px;
+    
+}
+
+.London_modal-content h2 {
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: -15px;
+    
+}
+
+.London_modal-content ul {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    
+}
+
+.eye {
+    width: 200px;
+    float: right;
+    margin-top: -315px;
+    margin-right: 10px;
+}
+
+
+.tea {
+    width: 200px;
+    float: right;
+    margin-top: -210px;
+    margin-right: 10px;
+}
+
+.palace {
+    width: 200px;
+    float: right;
+    margin-top: -102px;
+    margin-right: 10px;
+}
 
 .show-London_modal {
     opacity: 1;
@@ -228,10 +395,12 @@ background-color: #9fcd73;
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     }
 
+/***Rome***/
+
 .Rome {
     width: 350px;
     height: 200px;
-    background-color: #fff;
+    background-image: url(rome.png);
     box-shadow: 0 4px 8px 0 gray;
 }
 
@@ -239,6 +408,27 @@ background-color: #9fcd73;
     text-align: center;
     width: 350px;
     height: 30px;
+    margin-bottom: -20px;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: -50px;
+}
+
+.Rome button {
+    background-color: #9fcd73;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 8px 0 #58595B;
+    border: none;
+    height: 30px;
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .Rome_modal {
@@ -264,6 +454,7 @@ background-color: #9fcd73;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 10px;
+    overflow: scroll;
     }
 
 .Rome_close-button {
@@ -273,12 +464,102 @@ background-color: #9fcd73;
     text-align: center;
     cursor: pointer;
     border-radius: 0.25rem;
-    background-color: lightgray;
+    background-color: #f38ba5;
+    box-shadow: 0 4px 10px 0 #58595B;
     }
 
 .Rome_close-button:hover {
-    background-color: darkgray;
+    background-color: #DD6486;
     }
+
+.Rome_modal-content button {
+    background-color: #9fcd73;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 10px 0 #58595B;
+    border: none;
+    height: 30px;
+    width: 100px;
+    float: right;
+    margin-top: 50px;
+    cursor: pointer;
+    float: right;
+    margin-right: -195px;
+}
+
+.Rome_modal-content h1 {
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -15px;
+    margin-left: 10px;
+    margin-bottom: -30px;
+}
+
+.earth3 {
+    width: 163px;
+    height: 163px;
+}
+
+.italy {
+    width: 163px;
+    height: 163px;
+}
+
+.location3 h2{
+    float: right;
+    margin-top: -150px;
+    margin-right: 50px;
+}
+
+.location3 ul{
+    float: right;
+    width: 100px;
+    margin-top: -105px;
+    
+}
+
+.Rome_modal-content h2 {
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: -15px;
+    
+}
+
+.Rome_modal-content ul {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    
+}
+
+.vatican {
+    width: 200px;
+    float: right;
+    margin-top: -315px;
+    margin-right: 10px;
+}
+
+
+.pantheon {
+    width: 200px;
+    float: right;
+    margin-top: -210px;
+    margin-right: 10px;
+}
+
+.gelato {
+    width: 200px;
+    float: right;
+    margin-top: -102px;
+    margin-right: 10px;
+}
+
 
 .show-Rome_modal {
     opacity: 1;
@@ -287,10 +568,12 @@ background-color: #9fcd73;
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     }
 
+/***Tokyo***/
+
 .Tokyo {
     width: 350px;
     height: 200px;
-    background-color: #fff;
+    background-image: url(tokyo.png);
     box-shadow: 0 4px 8px 0 gray;
 }
 
@@ -298,6 +581,27 @@ background-color: #9fcd73;
     text-align: center;
     width: 350px;
     height: 30px;
+    margin-bottom: -20px;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: -50px;
+}
+
+.Tokyo button {
+    background-color: #9fcd73;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 8px 0 #58595B;
+    border: none;
+    height: 30px;
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .Tokyo_modal {
@@ -323,6 +627,7 @@ background-color: #9fcd73;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 10px;
+    overflow: scroll;
     }
 
 .Tokyo_close-button {
@@ -332,12 +637,102 @@ background-color: #9fcd73;
     text-align: center;
     cursor: pointer;
     border-radius: 0.25rem;
-    background-color: lightgray;
+    background-color: #f38ba5;
+    box-shadow: 0 4px 10px 0 #58595B;
     }
 
 .Tokyo_close-button:hover {
-    background-color: darkgray;
+    background-color: #DD6486;
     }
+
+.Tokyo_modal-content button {
+    background-color: #9fcd73;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 10px 0 #58595B;
+    border: none;
+    height: 30px;
+    width: 100px;
+    float: right;
+    margin-top: 50px;
+    cursor: pointer;
+    float: right;
+    margin-right: -195px;
+}
+
+.Tokyo_modal-content h1 {
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -15px;
+    margin-left: 10px;
+    margin-bottom: -30px;
+}
+
+.earth4 {
+    width: 163px;
+    height: 163px;
+}
+
+.japan {
+    width: 163px;
+    height: 163px;
+}
+
+.location4 h2{
+    float: right;
+    margin-top: -150px;
+    margin-right: 50px;
+}
+
+.location4 ul{
+    float: right;
+    width: 100px;
+    margin-top: -105px;
+    
+}
+
+.Tokyo_modal-content h2 {
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: -15px;
+    
+}
+
+.Tokyo_modal-content ul {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    
+}
+
+.imperial {
+    width: 200px;
+    float: right;
+    margin-top: -300px;
+    margin-right: 10px;
+}
+
+
+.ginza {
+    width: 200px;
+    float: right;
+    margin-top: -195px;
+    margin-right: 10px;
+}
+
+.sushi {
+    width: 200px;
+    float: right;
+    margin-top: -87px;
+    margin-right: 10px;
+}
+
 
 .show-Tokyo_modal {
     opacity: 1;
@@ -346,10 +741,12 @@ background-color: #9fcd73;
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     }
 
+/***NYC***/
+
 .NYC {
     width: 350px;
     height: 200px;
-    background-color: #fff;
+    background-image: url(nyc.png);
     box-shadow: 0 4px 8px 0 gray;
 }
 
@@ -357,6 +754,27 @@ background-color: #9fcd73;
     text-align: center;
     width: 350px;
     height: 30px;
+    margin-bottom: -20px;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: -50px;
+}
+
+.NYC button {
+    background-color: #9fcd73;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 8px 0 #58595B;
+    border: none;
+    height: 30px;
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .NYC_modal {
@@ -382,6 +800,7 @@ background-color: #9fcd73;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 10px;
+    overflow: scroll;
     }
 
 .NYC_close-button {
@@ -391,12 +810,101 @@ background-color: #9fcd73;
     text-align: center;
     cursor: pointer;
     border-radius: 0.25rem;
-    background-color: lightgray;
+    background-color: #f38ba5;
+    box-shadow: 0 4px 10px 0 #58595B;
     }
 
 .NYC_close-button:hover {
-    background-color: darkgray;
+    background-color: #DD6486;
     }
+
+.NYC_modal-content button {
+    background-color: #9fcd73;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 10px 0 #58595B;
+    border: none;
+    height: 30px;
+    width: 100px;
+    float: right;
+    margin-top: 70px;
+    cursor: pointer;
+    float: right;
+    margin-right: -195px;
+}
+
+.NYC_modal-content h1 {
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -15px;
+    margin-left: 10px;
+    margin-bottom: -30px;
+}
+
+.earth5 {
+    width: 163px;
+    height: 163px;
+}
+
+.usa {
+    width: 163px;
+    height: 163px;
+}
+
+.location5 h2{
+    float: right;
+    margin-top: -150px;
+    margin-right: 50px;
+}
+
+.location5 ul{
+    float: right;
+    width: 100px;
+    margin-top: -105px;
+    
+}
+
+.NYC_modal-content h2 {
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: -15px;
+    
+}
+
+.NYC_modal-content ul {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    
+}
+
+.times {
+    width: 200px;
+    float: right;
+    margin-top: -300px;
+    margin-right: 10px;
+}
+
+
+.central {
+    width: 200px;
+    float: right;
+    margin-top: -195px;
+    margin-right: 10px;
+}
+
+.pizza {
+    width: 200px;
+    float: right;
+    margin-top: -87px;
+    margin-right: 10px;
+}
 
 .show-NYC_modal {
     opacity: 1;
@@ -405,10 +913,12 @@ background-color: #9fcd73;
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     }
 
+/***Sydney***/
+
 .Sydney {
     width: 350px;
     height: 200px;
-    background-color: #fff;
+    background-image: url(sydney.png);
     box-shadow: 0 4px 8px 0 gray;
 }
 
@@ -416,6 +926,27 @@ background-color: #9fcd73;
     text-align: center;
     width: 350px;
     height: 30px;
+    margin-bottom: -20px;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: -50px;
+}
+
+.Sydney button {
+    background-color: #9fcd73;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 8px 0 #58595B;
+    border: none;
+    height: 30px;
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .Sydney_modal {
@@ -441,6 +972,7 @@ background-color: #9fcd73;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 10px;
+    overflow: scroll;
     }
 
 .Sydney_close-button {
@@ -450,12 +982,101 @@ background-color: #9fcd73;
     text-align: center;
     cursor: pointer;
     border-radius: 0.25rem;
-    background-color: lightgray;
+    background-color: #f38ba5;
+    box-shadow: 0 4px 10px 0 #58595B;
     }
 
 .Sydney_close-button:hover {
-    background-color: darkgray;
+    background-color: #DD6486;
     }
+
+.Sydney_modal-content button {
+    background-color: #9fcd73;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 10px 0 #58595B;
+    border: none;
+    height: 30px;
+    width: 100px;
+    float: right;
+    margin-top: 70px;
+    cursor: pointer;
+    float: right;
+    margin-right: -195px;
+}
+
+.Sydney_modal-content h1 {
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -15px;
+    margin-left: 10px;
+    margin-bottom: -30px;
+}
+
+.earth6 {
+    width: 163px;
+    height: 163px;
+}
+
+.australia {
+    width: 163px;
+    height: 163px;
+}
+
+.location6 h2{
+    float: right;
+    margin-top: -150px;
+    margin-right: 50px;
+}
+
+.location6 ul{
+    float: right;
+    width: 100px;
+    margin-top: -105px;
+    
+}
+
+.Sydney_modal-content h2 {
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: -15px;
+    
+}
+
+.Sydney_modal-content ul {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    
+}
+
+.opera {
+    width: 200px;
+    float: right;
+    margin-top: -300px;
+    margin-right: 10px;
+}
+
+
+.bridge {
+    width: 200px;
+    float: right;
+    margin-top: -197px;
+    margin-right: 10px;
+}
+
+.timtams {
+    width: 200px;
+    float: right;
+    margin-top: -87px;
+    margin-right: 10px;
+}
 
 .show-Sydney_modal {
     opacity: 1;

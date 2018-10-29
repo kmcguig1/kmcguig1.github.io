@@ -1,38 +1,39 @@
 * {
-/*    background-color: #bfe6f1;*/
-    margin: 0px;
-}
 
-.container {
-    height: 100vh;
-    width: 2048;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    overflow-y: hidden;
-    background-color: #bfe6f1;
+    margin: 0px;
 }
 
 /*Checklist*/
 
+.container {
+    background-image: url(background.svg);
+    background-repeat: no-repeat;
+    height: 738px;
+    width: 5000px;
+}
+
+
 .checklist {
     height: 200px;
-    width: 2048px;
-    background-color: white;
+    width: 100vw;
+    background-image: url(checklist.svg);
     position: fixed;
     top: 0px !important;
     display: grid;
     padding-left: 30px;
     padding-bottom: 5px;
-    box-shadow: 1px 1px 30px #000;
+    box-shadow: 5px 10px 28px #888888;
+    z-index: 7;
 }
 
 .checklist h3 {
     background-color: white;
-    padding-top: 15px;
+    padding-top: 20px;
     font-family: geographica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 25px;
+    font-size: 24px;
+    line-height: 0px;
 }
 
 .Item1 {
@@ -46,20 +47,25 @@
 .Checkbox1 {
     height: 27px;
     width: 27px;
-    background-image: url(blank_check.png);
+    background-image: url(checkbox.svg);
     position: absolute;
 }
 
 .Check1 {
     height: 27px;
     width: 27px;
-    background-image: url(check.png);
+    background-image: url(check.svg);
     position: relative;
     opacity: 0;
 }
 
-.Item1 p {
-    
+.Item1 p{
+    margin-top: -22px;
+    margin-left: 40px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 }
 
 .Item2 {
@@ -73,16 +79,25 @@
 .Checkbox2 {
     height: 27px;
     width: 27px;
-    background-image: url(blank_check.png);
+    background-image: url(checkbox.svg);
     position: absolute;
 }
 
 .Check2 {
     height: 27px;
     width: 27px;
-    background-image: url(check.png);
+    background-image: url(check.svg);
     position: relative;
     opacity: 0;
+}
+
+.Item2 p{
+    margin-top: -22px;
+    margin-left: 40px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 }
 
 .Item3 {
@@ -95,16 +110,25 @@
 .Checkbox3 {
     height: 27px;
     width: 27px;
-    background-image: url(blank_check.png);
+    background-image: url(checkbox.svg);
     position: absolute;
 }
 
 .Check3 {
     height: 27px;
     width: 27px;
-    background-image: url(check.png);
+    background-image: url(check.svg);
     position: relative;
     opacity: 0;
+}
+
+.Item3 p{
+    margin-top: -22px;
+    margin-left: 40px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 }
 
 .Item4 {
@@ -119,16 +143,25 @@
 .Checkbox4 {
     height: 27px;
     width: 27px;
-    background-image: url(blank_check.png);
+    background-image: url(checkbox.svg);
     position: absolute;
 }
 
 .Check4 {
     height: 27px;
     width: 27px;
-    background-image: url(check.png);
+    background-image: url(check.svg);
     position: relative;
     opacity: 0;
+}
+
+.Item4 p{
+    margin-top: -22px;
+    margin-left: 40px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 }
 
 .Item5 {
@@ -140,16 +173,25 @@
 .Checkbox5 {
     height: 27px;
     width: 27px;
-    background-image: url(blank_check.png);
+    background-image: url(checkbox.svg);
     position: absolute;
 }
 
 .Check5 {
     height: 27px;
     width: 27px;
-    background-image: url(check.png);
+    background-image: url(check.svg);
     position: relative;
     opacity: 0;
+}
+
+.Item5 p{
+    margin-top: -22px;
+    margin-left: 40px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 }
 
 .Item6 {
@@ -163,16 +205,25 @@
 .Checkbox6 {
     height: 27px;
     width: 27px;
-    background-image: url(blank_check.png);
+    background-image: url(checkbox.svg);
     position: absolute;
 }
 
 .Check6 {
     height: 27px;
     width: 27px;
-    background-image: url(check.png);
+    background-image: url(check.svg);
     position: relative;
     opacity: 0;
+}
+
+.Item6 p{
+    margin-top: -22px;
+    margin-left: 40px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 }
 
 /*Directions*/
@@ -188,12 +239,12 @@
         visibility: hidden;
         transform: scale(1.1);
         transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-        z-index: 1;
+        z-index: 8;
     }
 
 .Direction_modal-content {
         width: 500px;
-        height: 500px;    
+        height: 200px;    
         position: absolute;
         top: 50%;
         left: 50%;
@@ -201,6 +252,38 @@
         background-color: white;
         padding: 10px;
     }
+
+.Direction_modal-content h1 {
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    text-align: center;
+}
+
+.Direction_modal-content p {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.Direction_modal-content button {
+    background-color: #9fcd73;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 10px 0 #58595B;
+    border: none;
+    height: 30px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 200px;
+    cursor: pointer;
+
+}
 
 .show-Direction_modal {
         opacity: 1;
@@ -214,8 +297,16 @@
 .person {
     height: 300px;
     width: 200px;
-    background-color: cadetblue;
-    top: 466px;
+    top: 400px;
+    position: fixed;
+    left: 150px;
+    z-index: 5;
+}
+
+.person1 {
+    height: 300px;
+    width: 200px;
+    background-image: url(person.svg);
     position: fixed;
     left: 150px;
 
@@ -224,7 +315,7 @@
 .person2 {
     height: 300px;
     width: 200px;
-    background-color: azure;
+    background-image: url(person2.svg);
     position: relative;
     opacity: 0;
 }
@@ -232,7 +323,7 @@
 .person3 {
     height: 300px;
     width: 200px;
-    background-color:darkseagreen;
+    background-image: url(person3.svg);
     position: absolute;
     opacity: 0;
     margin-top: -300px;
@@ -241,7 +332,7 @@
 .person4 {
     height: 300px;
     width: 200px;
-    background-color:cornflowerblue;
+    background-image: url(person4.svg);
     position: absolute;
     opacity: 0;
     margin-top: -300px;
@@ -250,11 +341,7 @@
 /*Items to click*/
 
 .items {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    height: 468px;
-    margin-top: 300px;
+    height: 768px;
     position: relative;
 }
 
@@ -270,22 +357,21 @@
 .suitcase {
     width: 130px;
     height: 200px;
-    background-image: url(suitcase.png);
+    background-image: url(suitcase.svg);
     background-repeat: no-repeat;
-    flex-grow: 0;
-    flex-shrink: 0;
-    margin-left: 600px;
+    position: absolute;
+    left: 600px;
+    margin-top: 518px;
 }
 
 .passport {
     width: 45px;
     height: 70px;
-    background-image:url(passport.png);
-    flex-grow: 0;
-    flex-shrink: 0;
-    margin-left: 200px;
-    margin-right: 200px;
+    background-image: url(passport.svg);
+    position: absolute;
+    left: 960px;
     margin-bottom: 200px;
+    margin-top: 488px;
 }
 
 .passport_button {
@@ -302,9 +388,10 @@
     position: relative;
     height: 345px;
     width: 600px;
-    background-image: url(car.png);
-    flex-grow: 0;
-    flex-shrink: 0;
+    background-image: url(car.svg);
+    position: absolute;
+    left: 1300px;
+    margin-top: 413px;
 
 }
 
@@ -317,14 +404,20 @@
     cursor: pointer;
 }
 
+#screen {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    left: 3000px;
+}
+
 #boarding_pass {
     width: 90px;
     height: 35px;
-    background-image: url(boarding_pass.png);
-    flex-grow: 0;
-    flex-shrink: 0;
-    margin-left: 1100px;
-    margin-bottom: 200px;
+    background-image: url(bp.svg);
+    left: 350px;
+    margin-top: 512px;
+    position: absolute;
 }
 
 .bp_button {
@@ -337,13 +430,13 @@
 }
 
 .security {
-    width: 235px;
+    width: 135px;
     height: 350px;
-    background-image: url(security.png);
-    flex-grow: 0;
-    flex-shrink: 0;
-    margin-left: 500px;
-    cursor: pointer;
+    background-image: url(security.svg);
+    position: absolute;
+    left: 750px;
+    margin-top: 350px;
+    background-repeat: no-repeat;
 }
 
 .security_button {
@@ -355,15 +448,24 @@
     cursor: pointer;
 }
 
+.security2 {
+    width: 100px;
+    height: 350px;
+    background-image: url(security2.svg);
+    position: absolute;
+    left: 135px;
+    margin-top: -353px;
+    z-index: 5;
+}
+
 .board {
     width: 235px;
     height: 350px;
-    background-image: url(board.png);
-    flex-grow: 0;
-    flex-shrink: 0;
-    margin-left: 400px;
-    margin-right: 200px;
-    cursor: pointer;
+    background-image: url(board.svg);
+    position: absolute;
+    left: 4425px;
+    margin-top: -540px;
+    
 }
 
 .board_button {
@@ -373,6 +475,27 @@
     border: none;
     background: none;
     cursor: pointer;
+}
+
+.end {
+    height: 358px;
+    width: 165px;
+    background-color: #E6E6E6;
+    position: absolute;
+    left: 4607px;
+    margin-top: -510px;
+    z-index: 5;
+}
+
+.final {
+    position: absolute;
+    left: 4772px;
+    width: 229px;
+    height: 738px;
+    background-color: #E6E6E6;
+    margin-top: -768px;
+    z-index: 6;
+    
 }
 
 /*Final Popup*/
@@ -388,12 +511,12 @@
         visibility: hidden;
         transform: scale(1.1);
         transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-        z-index: 1;
+        z-index: 10;
     }
 
 .Final_modal-content {
         width: 500px;
-        height: 500px;    
+        height: 250px;    
         position: absolute;
         top: 50%;
         left: 50%;
@@ -403,18 +526,56 @@
     }
 
 .Final_close-button {
-        float: right;
-        width: 1.5rem;
-        line-height: 1.5rem;
-        text-align: center;
-        cursor: pointer;
-        border-radius: 0.25rem;
-        background-color: lightgray;
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: #f38ba5;
+    box-shadow: 0 4px 10px 0 #58595B;
     }
 
 .Final_close-button:hover {
-        background-color: darkgray;
+    background-color: #DD6486;
     }
+
+.Final_modal-content h1 {
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    text-align: center;
+}
+
+.Final_modal-content p {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.Final_modal-content img {
+    width: 100px;
+    margin-left: 200px;
+}
+
+.Final_modal-content button {
+    background-color: #9fcd73;
+    font-family: geographica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 10px 0 #58595B;
+    border: none;
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 175px;
+    cursor: pointer;
+
+}
 
 .show-Final_modal {
         opacity: 1;

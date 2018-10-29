@@ -1,4 +1,4 @@
-		jQuery(function( $ ){
+				jQuery(function( $ ){
 			/**
 			 * Demo binding and preparation, no need to read this part
 			 */
@@ -33,25 +33,15 @@
             //end of important code section for taking the user to a specific section horizontally on click
             
             $('#car_button').click(function() {
-            $target.scrollTo($('#boarding_pass') , 800);
+            $target.scrollTo($('#screen') , 1400);
 			});
             
-            $('#car_button').click(function() {
-            $target.scrollTo($('#boarding_pass') , 800);
-			});
-            
-            $('#car_button').click(function() {
-            $target.scrollTo($('#boarding_pass') , 800);
-			});
             
             //********** DOM-element on click code ************
 			$('#car_button').click(function() {
-             $target.scrollTo(document.getElementById('boarding_pass'), 800);
+             $target.scrollTo(document.getElementById('screen'), 1400);
 			});
             
-            $('#car_button').click(function() {
-             $target.scrollTo(document.getElementById('boarding_pass'), 800);
-			});
             
             
 		});

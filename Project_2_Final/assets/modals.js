@@ -8,7 +8,7 @@ var Parismodal = document.querySelector(".Paris_modal");
         Parismodal.classList.toggle("show-Paris_modal");
     }
 
-    function windowOnClick(event) {
+    function PariswindowOnClick(event) {
         if (event.target === Parismodal) {
             toggleParisModal();
         }
@@ -16,7 +16,7 @@ var Parismodal = document.querySelector(".Paris_modal");
 
     Paristrigger.addEventListener("click", toggleParisModal);
     PariscloseButton.addEventListener("click", toggleParisModal);
-    window.addEventListener("click", windowOnClick);
+    window.addEventListener("click", PariswindowOnClick);
 	
 
 //**London**
@@ -29,7 +29,7 @@ var Londonmodal = document.querySelector(".London_modal");
         Londonmodal.classList.toggle("show-London_modal");
     }
 
-    function windowOnClick(event) {
+    function LondonwindowOnClick(event) {
         if (event.target === Londonmodal) {
             toggleLondonModal();
         }
@@ -37,7 +37,7 @@ var Londonmodal = document.querySelector(".London_modal");
 
     Londontrigger.addEventListener("click", toggleLondonModal);
     LondoncloseButton.addEventListener("click", toggleLondonModal);
-    window.addEventListener("click", windowOnClick);
+    window.addEventListener("click", LondonwindowOnClick);
 
 //**Rome**
 
@@ -49,7 +49,7 @@ var Romemodal = document.querySelector(".Rome_modal");
         Romemodal.classList.toggle("show-Rome_modal");
     }
 
-    function windowOnClick(event) {
+    function RomewindowOnClick(event) {
         if (event.target === Romemodal) {
             toggleRomeModal();
         }
@@ -57,7 +57,7 @@ var Romemodal = document.querySelector(".Rome_modal");
 
     Rometrigger.addEventListener("click", toggleRomeModal);
     RomecloseButton.addEventListener("click", toggleRomeModal);
-    window.addEventListener("click", windowOnClick);
+    window.addEventListener("click", RomewindowOnClick);
 
 //**Tokyo**
 
@@ -69,7 +69,7 @@ var Tokyomodal = document.querySelector(".Tokyo_modal");
         Tokyomodal.classList.toggle("show-Tokyo_modal");
     }
 
-    function windowOnClick(event) {
+    function TokyowindowOnClick(event) {
         if (event.target === Tokyomodal) {
             toggleTokyoModal();
         }
@@ -77,7 +77,7 @@ var Tokyomodal = document.querySelector(".Tokyo_modal");
 
     Tokyotrigger.addEventListener("click", toggleTokyoModal);
     TokyocloseButton.addEventListener("click", toggleTokyoModal);
-    window.addEventListener("click", windowOnClick);
+    window.addEventListener("click", TokyowindowOnClick);
 
 //**NYC**
 
@@ -89,7 +89,7 @@ var NYCmodal = document.querySelector(".NYC_modal");
         NYCmodal.classList.toggle("show-NYC_modal");
     }
 
-    function windowOnClick(event) {
+    function NYCwindowOnClick(event) {
         if (event.target === NYCmodal) {
             toggleNYCModal();
         }
@@ -97,7 +97,7 @@ var NYCmodal = document.querySelector(".NYC_modal");
 
     NYCtrigger.addEventListener("click", toggleNYCModal);
     NYCcloseButton.addEventListener("click", toggleNYCModal);
-    window.addEventListener("click", windowOnClick);
+    window.addEventListener("click", NYCwindowOnClick);
 
 //**Sydney**
 
@@ -109,7 +109,7 @@ var Sydneymodal = document.querySelector(".Sydney_modal");
         Sydneymodal.classList.toggle("show-Sydney_modal");
     }
 
-    function windowOnClick(event) {
+    function SydneywindowOnClick(event) {
         if (event.target === Sydneymodal) {
             toggleSydneyModal();
         }
@@ -117,4 +117,4 @@ var Sydneymodal = document.querySelector(".Sydney_modal");
 
     Sydneytrigger.addEventListener("click", toggleSydneyModal);
     SydneycloseButton.addEventListener("click", toggleSydneyModal);
-    window.addEventListener("click", windowOnClick);
+    window.addEventListener("click", SydneywindowOnClick);
