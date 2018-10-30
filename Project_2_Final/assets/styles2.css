@@ -9,7 +9,7 @@
     background-image: url(background.svg);
     background-repeat: no-repeat;
     height: 738px;
-    width: 5000px;
+    width: 4800px;
 }
 
 
@@ -285,6 +285,10 @@
 
 }
 
+.Direction_modal-content button:hover {
+    background-color: #7FA058;
+}
+
 .show-Direction_modal {
         opacity: 1;
         visibility: visible;
@@ -414,7 +418,7 @@
 #boarding_pass {
     width: 90px;
     height: 35px;
-    background-image: url(bp.svg);
+    background-image: url(boarding_pass.svg);
     left: 350px;
     margin-top: 512px;
     position: absolute;
@@ -462,8 +466,8 @@
     width: 235px;
     height: 350px;
     background-image: url(board.svg);
-    position: absolute;
-    left: 4425px;
+/*    position: absolute;*/
+    margin-left: 4425px;
     margin-top: -540px;
     
 }
@@ -475,28 +479,21 @@
     border: none;
     background: none;
     cursor: pointer;
+    z-index: 10;
 }
 
-.end {
-    height: 358px;
-    width: 165px;
-    background-color: #E6E6E6;
-    position: absolute;
-    left: 4607px;
-    margin-top: -510px;
-    z-index: 5;
-}
 
 .final {
     position: absolute;
-    left: 4772px;
-    width: 229px;
-    height: 738px;
+    left: 4604px;
+    width: 190px;
+    height: 390px;
     background-color: #E6E6E6;
-    margin-top: -768px;
-    z-index: 6;
+    margin-top: -421px;
+    z-index: 5;
     
 }
+
 
 /*Final Popup*/
 
@@ -575,6 +572,10 @@
     margin-left: 175px;
     cursor: pointer;
 
+}
+
+.Final_modal-content button:hover {
+    background-color: #7FA058;
 }
 
 .show-Final_modal {
