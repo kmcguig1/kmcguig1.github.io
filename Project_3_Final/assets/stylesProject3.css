@@ -162,7 +162,7 @@ page {
 
 .photo3 {
     width: 90%;
-    height: 18.75rem;
+/*    height: 18.75rem;*/
     margin: 0.625rem auto 2.5rem auto;
     display: flex;
     align-items: center;
@@ -172,10 +172,9 @@ page {
     width: 100%; 
 }
 
-
 .photo4 {
     width: 90%;
-    height: 18.75rem;
+/*    height: 18.75rem;*/
     margin: 0.625rem auto 2.5rem auto;
     display: flex;
     align-items: center;
@@ -187,24 +186,29 @@ page {
 
 .photo5 {
     width: 90%;
-    height: 18.75rem;
+/*    height: 18.75rem;*/
     margin: 0.625rem auto 2.5rem auto;
-    display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .photo5 img {
-    width: 100%; 
+    width: 100%;
 }
+
 .photo6 {
     width: 90%;
-    height: 18.75rem;
+/*    height: 18.75rem;*/
     margin: 0.625rem auto 2.5rem auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 .photo6 img {
-    width: 100%;
+    width: 100%; 
 }
+
 
 @media only screen and (min-width: 601px) {
 
@@ -235,6 +239,7 @@ page {
         grid-column-start: 1;
         width: 95%;
         height: 21.875rem;
+        
     }
     
     .photo4 {
@@ -246,8 +251,20 @@ page {
     .photo5 {
         width: 95%;
         height: 21.875rem;
+        padding-top: 1rem;
+        
     }
     
+    .photo6 {
+        width: 95%;
+        height: 21.875rem;
+        
+    }
+    
+    .photo7 {
+        width: 95%;
+        height: 21.875rem;
+    }
 }
 
 @media only screen and (min-width: 960px) {
@@ -329,12 +346,14 @@ page {
 /*        height: 31.25rem;*/
         grid-column-start: 2;
         margin-right: 0;
+        
     }
     
     .photo5 {
         width: 95%;
 /*        height: 31.25rem;*/
         margin-left: 0;
+        padding-top: 0.5rem;
     }
     
     .photo6{
@@ -343,15 +362,4 @@ page {
         margin-right: 0;
     }
     
-    .photo7 {
-        width: 95%;
-        height: 31.25rem;
-        margin-left: 0;
-    }
-    
-    .photo8{
-        width: 95%;
-        height: 31.25rem;
-        margin-right: 0;
-    }
 }
